@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coaches</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="coaches_style.css" />
     <script defer src="app.js"></script>
 
     <link

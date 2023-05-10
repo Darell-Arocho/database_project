@@ -1,0 +1,11 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto&family=Work+Sans&display=swap");
+
+/* Setting global styles for the body */
+body {
+background-color: #131316;
+color: #ffffff;
+font-family: "Poppins", sans-serif;
+padding: 0;
+margin: 0;
+}

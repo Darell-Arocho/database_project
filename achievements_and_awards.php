@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wins</title>
+    <title>Achievements and Awards</title>
 
-    <link rel="stylesheet" href="wins_style.css" />
+    <link rel="stylesheet" href="achievements_and_awards_style.css" />
     <script defer src="app.js"></script>
 
     <link

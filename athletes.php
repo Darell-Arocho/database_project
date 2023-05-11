@@ -1,3 +1,8 @@
+<?php
+  include_once 'dbh_inc.php'
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,23 +24,6 @@
     <button class="button_athletes" onclick="location.href='index.html'">Go to home page</button>
 
 
-    <?php
-
-    $serverName = "localhost";
-    $userName = "darellal";
-    $password = "comp4018";
-    $dbName = "db_AmarilysHarryDarell";
-
-    // Create connection
-
-    $con = mysqli_connect($serverName, $userName, $password, $dbName);
-
-    if(mysqli_connect_errno()){
-        echo "Failed to connect";
-        exit();
-    }
-    echo "Connection successful!";
-
-?>
+  
   </body>
 </html>

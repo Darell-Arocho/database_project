@@ -16,7 +16,7 @@
   </head>
   <body>
     
-    <button onclick="location.href='index.html'">Go to home page</button>
+    <button class="button_w_l_record" onclick="location.href='index.html'">Go to home page</button>
 
 
     <?php

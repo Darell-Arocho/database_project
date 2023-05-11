@@ -16,7 +16,7 @@
   </head>
   <body>
     
-    <button onclick="location.href='index.html'">Go to home page</button>
+    <button class="button_achiev_awards" onclick="location.href='index.html'">Go to home page</button>
 
 
     <?php

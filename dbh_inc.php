@@ -13,6 +13,6 @@
         echo "Failed to connect";
         exit();
     }
-    echo "Connection successful!";
+    // echo "Connection successful!";
 
 ?>

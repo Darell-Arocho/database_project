@@ -21,6 +21,33 @@
   </head>
   <body>
     
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="header2">Disciplinas</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <?php
+      $sql = "SELECT * FROM Disciplinas;";
+      $result = mysqli_query($conn, $sql);
+  
+
+      while ($row = mysqli_fetch_assoc($result)){
+        echo $row['ID_Disciplinas'] . "<br>";
+        echo $row['NombreDisciplina'] . "<br>";
+      }
+
+    ?>
+
+
+
+
     <button class="button_sports" onclick="location.href='index.html'">Go to home page</button>
 
 

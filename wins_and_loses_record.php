@@ -21,6 +21,20 @@
   </head>
   <body>
     
+
+  <?php
+      $sql = "SELECT * FROM Disciplinas;";
+      $result = mysqli_query($conn, $sql);
+  
+
+      while ($row = mysqli_fetch_assoc($result)){
+        echo $row['ID_Disciplinas'] . "<br>";
+        echo $row['NombreDisciplina'] . "<br>";
+      }
+
+    ?>
+
+
     <button class="button_w_l_record" onclick="location.href='index.html'">Go to home page</button>
 
 

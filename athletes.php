@@ -23,14 +23,26 @@
     
 
   <?php
-      $sql = "SELECT * FROM Disciplinas;";
+      $sql = "SELECT * FROM Atletas;";
       $result = mysqli_query($conn, $sql);
-  
-
+    
+      echo "<table>";
+      echo "<tr><th>ID_Atleta</th><th>Nombre</th><th>Genero</th><th>Deporte</th><th>FechaNac</th><th>Altura</th><th>Peso</th><th>Activo</th></tr>";
+    
       while ($row = mysqli_fetch_assoc($result)){
-        echo $row['ID_Disciplinas'] . "<br>";
-        echo $row['NombreDisciplina'] . "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['ID_Atleta'] . "</td>";
+        echo "<td>" . $row['Nombre'] . "</td>";
+        echo "<td>" . $row['Genero'] . "</td>";
+        echo "<td>" . $row['Deporte'] . "</td>";
+        echo "<td>" . $row['FechaNac'] . "</td>";
+        echo "<td>" . $row['Altura'] . "</td>";
+        echo "<td>" . $row['Peso'] . "</td>";
+        echo "<td>" . $row['Activo'] . "</td>";
+        echo "</tr>";
       }
+    
+      echo "</table>";
 
     ?>
 

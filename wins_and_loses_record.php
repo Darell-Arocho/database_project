@@ -23,14 +23,23 @@
     
 
   <?php
-      $sql = "SELECT * FROM Disciplinas;";
+      $sql = "SELECT * FROM Registro_Victoria_y_Derrotas;";
       $result = mysqli_query($conn, $sql);
-  
-
+    
+      echo "<table>";
+      echo "<tr><th>ID_Registro</th><th>Victorias</th><th>Derrotas</th><th>DeportistaID</th><th>DisciplinasID</th></tr>";
+    
       while ($row = mysqli_fetch_assoc($result)){
-        echo $row['ID_Disciplinas'] . "<br>";
-        echo $row['NombreDisciplina'] . "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['ID_Registro'] . "</td>";
+        echo "<td>" . $row['Victorias'] . "</td>";
+        echo "<td>" . $row['Derrotas'] . "</td>";
+        echo "<td>" . $row['DeportistaID'] . "</td>";
+        echo "<td>" . $row['DisciplinaID'] . "</td>";
+        echo "</tr>";
       }
+    
+      echo "</table>";
 
     ?>
 

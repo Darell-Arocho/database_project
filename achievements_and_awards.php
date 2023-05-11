@@ -23,14 +23,23 @@
     
 
   <?php
-      $sql = "SELECT * FROM Disciplinas;";
+      $sql = "SELECT * FROM Logros_y_Reconocimientos;";
       $result = mysqli_query($conn, $sql);
-  
-
+    
+      echo "<table>";
+      echo "<tr><th>ID_Logro</th><th>Nombre_Logro</th><th>Fecha</th><th>AtletaID</th></tr>";
+    
       while ($row = mysqli_fetch_assoc($result)){
-        echo $row['ID_Disciplinas'] . "<br>";
-        echo $row['NombreDisciplina'] . "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['ID_Logro'] . "</td>";
+        echo "<td>" . $row['Nombre_Logo'] . "</td>";
+        echo "<td>" . $row['Fecha'] . "</td>";
+        echo "<td>" . $row['Atleta'] . "</td>";
+        echo "</tr>";
       }
+    
+      echo "</table>";
+      
 
     ?>
 

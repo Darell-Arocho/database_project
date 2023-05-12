@@ -66,6 +66,11 @@
         <button type="submit" name="submit">Submit</button>
       </form>
 
+      <form action="delete.inc.athl.php" method="POST" class="form2">
+        <input type="number" name="atletaID" placeholder="AtletaID">
+        <br>
+        <button type="submit" name="delete">Delete</button>
+      </form>
 
     <?php
         // if (isset($_POST['submit'])) {

@@ -33,6 +33,14 @@ table {
     justify-content: center;
 }
 
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh
+}
+
 .button_athletes{
     position: fixed;
     bottom: 0;

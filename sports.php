@@ -81,6 +81,10 @@
       </div>
     </div> -->
 
+
+    
+
+
     <?php
       // $sql = "SELECT * FROM Disciplinas;";
       // $result = mysqli_query($conn, $sql);
@@ -108,11 +112,30 @@
       echo "</table>";
     
     
-
      ?>
 
+      <form action="submit.inc.php" method="POST" class="form1">
+        <input type="number" name="disciplinaID" placeholder="DisciplinaID">
+        <br>
+        <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
+        <br>
+        <button type="submit" name="submit">Submit</button>
+      </form>
+
+      <form action="delete.inc.php" method="POST" class="form2">
+        <input type="number" name="disciplinaID" placeholder="DisciplinaID">
+        <br>
+        <button type="submit" name="delete">Delete</button>
+      </form>
 
 
+      <!-- <form action="submit.inc.php" method="POST" class="form2">
+        <input type="number" name="disciplinaID" placeholder="DisciplinaID">
+        <br>
+        <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
+        <br>
+        <button type="delete" name="Delete">Delete</button>
+      </form> -->
 
     <button class="button_sports" onclick="location.href='index.html'">Go to home page</button>
 

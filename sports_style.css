@@ -26,6 +26,21 @@ th {
   color: white;
 } 
 
+.form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh
+}
+
 .button_sports {
     position: fixed;
     bottom: 0;

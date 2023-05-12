@@ -63,7 +63,7 @@
         <br>
         <input type="number" name="peso" placeholder="Peso">
         <br>
-        <button type="submit" name="submit">Submit</button>
+        <button type="submit" name="submit" class="submitBTN">Submit</button>
       </form>
 
       <form action="delete.inc.athl.php" method="POST" class="form2">

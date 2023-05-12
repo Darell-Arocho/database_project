@@ -27,7 +27,7 @@
       $result = mysqli_query($conn, $sql);
     
       echo "<table>";
-      echo "<tr><th>ID_Atleta</th><th>Nombre</th><th>Genero</th><th>Deporte</th><th>FechaNac</th><th>Altura</th><th>Peso</th><th>Activo</th></tr>";
+      echo "<tr><th>ID_Atleta</th><th>Nombre</th><th>Genero</th><th>Deporte</th><th>FechaNac</th><th>Altura</th><th>Peso</th><th>Estado</th></tr>";
     
       while ($row = mysqli_fetch_assoc($result)){
         echo "<tr>";
@@ -38,7 +38,7 @@
         echo "<td>" . $row['FechaNac'] . "</td>";
         echo "<td>" . $row['Altura'] . "</td>";
         echo "<td>" . $row['Peso'] . "</td>";
-        echo "<td>" . $row['Activo'] . "</td>";
+        echo "<td>" . $row['Estado'] . "</td>";
         echo "</tr>";
       }
     
@@ -46,25 +46,25 @@
 
     ?>
 
-      <!-- <form action="submit.inc.php" method="POST">
-        <input type="number" name="atletaid" placeholder="AtletaID">
-        <br>
-        <input type="text" name="nombre" placeholder="Nombre">
-        <br>
-        <input type="text" name="genero" placeholder="Genero">
+      <form action="submit.inc.athl.php" method="POST" class="form1">
+        <input type="number" name="altura" placeholder="Altura">
         <br>
         <input type="text" name="deporte" placeholder="Deporte">
         <br>
+        <input type="text" name="estado" placeholder="Estado">
+        <br>
         <input type="text" name="fechanac" placeholder="FechaNac">
         <br>
-        <input type="number" name="altura" placeholder="Altura">
+        <input type="text" name="genero" placeholder="Genero">
+        <br>
+        <input type="number" name="atletaID" placeholder="AtletaID">
+        <br>
+        <input type="text" name="nombre" placeholder="Nombre">
         <br>
         <input type="number" name="peso" placeholder="Peso">
         <br>
-        <input type="text" name="activo" placeholder="Activo">
-        <br>
         <button type="submit" name="submit">Submit</button>
-      </form> -->
+      </form>
 
 
     <?php

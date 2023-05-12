@@ -46,6 +46,48 @@
 
     ?>
 
+      <!-- <form action="submit.inc.php" method="POST">
+        <input type="number" name="atletaid" placeholder="AtletaID">
+        <br>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <br>
+        <input type="text" name="genero" placeholder="Genero">
+        <br>
+        <input type="text" name="deporte" placeholder="Deporte">
+        <br>
+        <input type="text" name="fechanac" placeholder="FechaNac">
+        <br>
+        <input type="number" name="altura" placeholder="Altura">
+        <br>
+        <input type="number" name="peso" placeholder="Peso">
+        <br>
+        <input type="text" name="activo" placeholder="Activo">
+        <br>
+        <button type="submit" name="submit">Submit</button>
+      </form> -->
+
+
+    <?php
+        // if (isset($_POST['submit'])) {
+        //   $atleta_id = $_POST['atletaid'];
+        //   $nombre = $_POST['nombre'];
+        //   $genero = $_POST['genero'];
+        //   $deporte = $_POST['deporte'];
+        //   $fecha_nac = $_POST['fechanac'];
+        //   $altura = $_POST['altura'];
+        //   $peso = $_POST['peso'];
+        //   $activo = $_POST['activo'];
+          
+        //   // Use a prepared statement to insert the values into the database
+        //   $stmt = mysqli_prepare($conn, "INSERT INTO Atletas (ID_Atleta, Nombre, Genero, Deporte, FechaNac, Altura, Peso, Activo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        //   mysqli_stmt_bind_param($stmt, "issssiis", $atleta_id, $nombre, $genero, $deporte, $fecha_nac, $altura, $peso, $activo);
+        //   mysqli_stmt_execute($stmt);
+
+        //   // Redirect the user back to the form page
+        //   header("Location: athletes.php?submit=success");
+        //   exit();
+        // }
+      ?>
 
 
 

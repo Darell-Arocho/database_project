@@ -43,7 +43,29 @@ include_once 'dbh_inc.php'
   ?>
 
 
+      <form action="modify.inc.logros.php" method="POST" class="form1">
+        <input type="number" name="logroID" placeholder="LogroID">
+        <br>
+        <input type="text" name="nombreLogro" placeholder="NombreLogro">
+        <br>
+        <input type="text" name="fecha" placeholder="Fecha">
+        <br>
+        <input type="number" name="atletaID" placeholder="AtletaID">
+        <br>
+        <button type="submit" name="modify">Modify</button>
+      </form>
 
+      <!-- <form action="submit.inc.logros.php" method="POST" class="form2">
+        <input type="number" name="logroID" placeholder="LogroID">
+        <br>
+        <input type="text" name="nombreLogro" placeholder="NombreLogro">
+        <br>
+        <input type="text" name="fecha" placeholder="Fecha">
+        <br>
+        <input type="number" name="atletaID" placeholder="AtletaID">
+        <br>
+        <button type="submit" name="submit">submit</button>
+      </form> -->
 
   <button class="button_achiev_awards" onclick="location.href='index.html'">Go to home page</button>
 

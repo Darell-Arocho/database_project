@@ -1,8 +1,8 @@
 <?php
-  include_once 'dbh_inc.php'
+include_once 'dbh_inc.php'
 
 ?>
-
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -22,29 +22,28 @@
 
 
     <?php
-      $sql = "SELECT * FROM Liga;";
-      $result = mysqli_query($conn, $sql);
-    
-      echo "<table>";
-      echo "<tr><th>ID_Liga</th><th>AtletaID</th><th>Nombre</th><th>Nivel</th>";
-    
-      while ($row = mysqli_fetch_assoc($result)){
-        echo "<tr>";
-        echo "<td>" . $row['ID_Liga'] . "</td>";
-        echo "<td>" . $row['AtletaID'] . "</td>";
-        echo "<td>" . $row['Nombre'] . "</td>";
-        echo "<td>" . $row['Nivel'] . "</td>";
-        echo "</tr>";
-      }
-    
-      echo "</table>";
+  $sql = "SELECT * FROM Liga;";
+  $result = mysqli_query($conn, $sql);
 
-    ?>
+  echo "<table>";
+  echo "<tr><th>ID_Liga</th><th>AtletaID</th><th>Nombre</th><th>Nivel</th>";
 
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['ID_Liga'] . "</td>";
+    echo "<td>" . $row['AtletaID'] . "</td>";
+    echo "<td>" . $row['Nombre'] . "</td>";
+    echo "<td>" . $row['Nivel'] . "</td>";
+    echo "</tr>";
+  }
 
+  echo "</table>";
+
+  ?>
 
 
-    <button class="button_athletes" onclick="location.href='index.html'">Go to home page</button>
+
+
 
 
 

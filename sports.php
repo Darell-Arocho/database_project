@@ -1,10 +1,12 @@
 <?php
-  include_once 'dbh_inc.php'
+include_once 'dbh_inc.php'
 
 ?>
+<?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,10 +16,7 @@
     <link rel="stylesheet" href="sports_style.css" />
     <script defer src="app.js"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- <style>
 		table {
@@ -35,7 +34,7 @@
 		}
 	</style> -->
 
-  <!-- <style>
+    <!-- <style>
   table {
     border-collapse: collapse;
     width: 100%;
@@ -54,9 +53,10 @@
 
 
 
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!-- <div class="container">
       <div class="row ">
         <div class="col">
@@ -82,37 +82,41 @@
     </div> -->
 
 
-    
+
 
 
     <?php
-      // $sql = "SELECT * FROM Disciplinas;";
-      // $result = mysqli_query($conn, $sql);
-  
+  // $sql = "SELECT * FROM Disciplinas;";
+  // $result = mysqli_query($conn, $sql);
 
-      // while ($row = mysqli_fetch_assoc($result)){
-      //   echo $row['ID_Disciplinas'] . "<br>";
-      //   echo $row['NombreDisciplina'] . "<br>";
-      // }
 
-      
-      $sql = "SELECT * FROM Disciplinas;";
-      $result = mysqli_query($conn, $sql);
-    
-      echo "<table>";
-      echo "<tr><th>ID_Disciplina</th><th>NombreDisciplina</th></tr>";
-    
-      while ($row = mysqli_fetch_assoc($result)){
-        echo "<tr>";
-        echo "<td>" . $row['ID_Disciplinas'] . "</td>";
-        echo "<td>" . $row['NombreDisciplina'] . "</td>";
-        echo "</tr>";
-      }
-    
-      echo "</table>";
-    
-    
-     ?>
+  // while ($row = mysqli_fetch_assoc($result)){
+  //   echo $row['ID_Disciplinas'] . "<br>";
+  //   echo $row['NombreDisciplina'] . "<br>";
+  // }
+
+
+  $sql = "SELECT * FROM Disciplinas;";
+  $result = mysqli_query($conn, $sql);
+
+  echo "<table>";
+  echo "<tr><th>ID_Disciplina</th><th>NombreDisciplina</th></tr>";
+
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['ID_Disciplinas'] . "</td>";
+    echo "<td>" . $row['NombreDisciplina'] . "</td>";
+    echo "</tr>";
+  }
+
+  echo "</table>";
+
+
+  ?>
+    <div class="form-container">
+
+        <div class="column">
+            <h3>Añade un nuevo deporte</h3>
 
       <form action="submit.inc.php" method="POST" class="form1">
         <input type="number" name="disciplinaID" placeholder="DisciplinaID">
@@ -129,7 +133,7 @@
       </form>
 
 
-      <!-- <form action="submit.inc.php" method="POST" class="form2">
+    <!-- <form action="submit.inc.php" method="POST" class="form2">
         <input type="number" name="disciplinaID" placeholder="DisciplinaID">
         <br>
         <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
@@ -137,9 +141,9 @@
         <button type="delete" name="Delete">Delete</button>
       </form> -->
 
-    <button class="button_sports" onclick="location.href='index.html'">Go to home page</button>
 
 
-    
-  </body>
+
+</body>
+
 </html>

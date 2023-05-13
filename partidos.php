@@ -1,8 +1,8 @@
 <?php
-  include_once 'dbh_inc.php'
+include_once 'dbh_inc.php'
 
 ?>
-
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -22,30 +22,29 @@
 
 
     <?php
-      $sql = "SELECT * FROM Partidos;";
-      $result = mysqli_query($conn, $sql);
-    
-      echo "<table>";
-      echo "<tr><th>ID_Partido</th><th>Resultado</th><th>Fecha</th><th>AtletaID</th><th>ID_Disciplinas</tr>";
-    
-      while ($row = mysqli_fetch_assoc($result)){
-        echo "<tr>";
-        echo "<td>" . $row['ID_Partido'] . "</td>";
-        echo "<td>" . $row['Resultado'] . "</td>";
-        echo "<td>" . $row['Fecha'] . "</td>";
-        echo "<td>" . $row['AtletaID'] . "</td>";
-        echo "<td>" . $row['ID_Disciplinas'] . "</td>";
-        echo "</tr>";
-      }
-    
-      echo "</table>";
+  $sql = "SELECT * FROM Partidos;";
+  $result = mysqli_query($conn, $sql);
 
-    ?>
+  echo "<table>";
+  echo "<tr><th>ID_Partido</th><th>Resultado</th><th>Fecha</th><th>AtletaID</th><th>ID_Disciplinas</tr>";
 
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['ID_Partido'] . "</td>";
+    echo "<td>" . $row['Resultado'] . "</td>";
+    echo "<td>" . $row['Fecha'] . "</td>";
+    echo "<td>" . $row['AtletaID'] . "</td>";
+    echo "<td>" . $row['ID_Disciplinas'] . "</td>";
+    echo "</tr>";
+  }
 
+  echo "</table>";
+
+  ?>
 
 
-    <button class="button_athletes" onclick="location.href='index.html'">Go to home page</button>
+
+
 
 
 

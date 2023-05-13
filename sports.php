@@ -119,13 +119,13 @@
         <br>
         <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
         <br>
-        <button type="submit" name="submit">Submit</button>
+        <button type="submit" name="submit" class="submitBTN">Submit</button>
       </form>
 
       <form action="delete.inc.php" method="POST" class="form2">
         <input type="number" name="disciplinaID" placeholder="DisciplinaID">
         <br>
-        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="delete" class="submitBTN">Delete</button>
       </form>
 
 

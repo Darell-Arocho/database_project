@@ -69,7 +69,7 @@
       <form action="delete.inc.athl.php" method="POST" class="form2">
         <input type="number" name="atletaID" placeholder="AtletaID">
         <br>
-        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="delete" class="submitBTN">Delete</button>
       </form>
 
     <?php

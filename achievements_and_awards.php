@@ -52,7 +52,7 @@ include_once 'dbh_inc.php'
         <br>
         <input type="number" name="atletaID" placeholder="AtletaID">
         <br>
-        <button type="submit" name="modify">Modify</button>
+        <button type="submit" name="modify" class="submitBTN">Modify</button>
       </form>
 
       <!-- <form action="submit.inc.logros.php" method="POST" class="form2">

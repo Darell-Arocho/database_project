@@ -2,26 +2,26 @@
 include_once 'dbh_inc.php'
 
 ?>
-
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achievements and Awards</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements and Awards</title>
 
-  <link rel="stylesheet" href="achievements_and_awards_style.css" />
-  <script defer src="app.js"></script>
+    <link rel="stylesheet" href="achievements_and_awards_style.css" />
+    <script defer src="app.js"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
 
 
-  <?php
+    <?php
   $sql = "SELECT * FROM Logros_y_Reconocimientos;";
   $result = mysqli_query($conn, $sql);
 
@@ -43,7 +43,7 @@ include_once 'dbh_inc.php'
   ?>
 
 
-      <form action="modify.inc.logros.php" method="POST" class="form1">
+    <form action="modify.inc.logros.php" method="POST" class="form1">
         <input type="number" name="logroID" placeholder="LogroID">
         <br>
         <input type="text" name="nombreLogro" placeholder="NombreLogro">
@@ -53,9 +53,9 @@ include_once 'dbh_inc.php'
         <input type="number" name="atletaID" placeholder="AtletaID">
         <br>
         <button type="submit" name="modify">Modify</button>
-      </form>
+    </form>
 
-      <!-- <form action="submit.inc.logros.php" method="POST" class="form2">
+    <!-- <form action="submit.inc.logros.php" method="POST" class="form2">
         <input type="number" name="logroID" placeholder="LogroID">
         <br>
         <input type="text" name="nombreLogro" placeholder="NombreLogro">
@@ -67,7 +67,6 @@ include_once 'dbh_inc.php'
         <button type="submit" name="submit">submit</button>
       </form> -->
 
-  <button class="button_achiev_awards" onclick="location.href='index.html'">Go to home page</button>
 
 
 </body>

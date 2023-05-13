@@ -2,7 +2,7 @@
 include_once 'dbh_inc.php'
 
 ?>
-
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -45,7 +45,6 @@ include_once 'dbh_inc.php'
 
 
 
-    <button class="button_athletes" onclick="location.href='index.html'">Go to home page</button>
 
 
 

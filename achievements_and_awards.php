@@ -42,18 +42,23 @@ include_once 'dbh_inc.php'
 
   ?>
 
+    <div class="form-container">
+        <!-- User inputs -->
+        <h3>Modifica</h3>
 
-    <form action="modify.inc.logros.php" method="POST" class="form1">
-        <input type="number" name="logroID" placeholder="LogroID">
-        <br>
-        <input type="text" name="nombreLogro" placeholder="NombreLogro">
-        <br>
-        <input type="text" name="fecha" placeholder="Fecha">
-        <br>
-        <input type="number" name="atletaID" placeholder="AtletaID">
-        <br>
-        <button type="submit" name="modify">Modify</button>
-    </form>
+        <!-- <div class="column"> -->
+        <form action="modify.inc.logros.php" method="POST" class="form1">
+            <input type="number" name="logroID" placeholder="LogroID">
+            <br>
+            <input type="text" name="nombreLogro" placeholder="NombreLogro">
+            <br>
+            <input type="text" name="fecha" placeholder="Fecha">
+            <br>
+            <input type="number" name="atletaID" placeholder="AtletaID">
+            <br>
+            <button type="submit" name="modify" class="submitBTN">Enter</button>
+        </form>
+    </div>
 
     <!-- <form action="submit.inc.logros.php" method="POST" class="form2">
         <input type="number" name="logroID" placeholder="LogroID">

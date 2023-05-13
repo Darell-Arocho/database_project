@@ -2,31 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto&family=Work+Sans&display=swap");
 
 /* Setting global styles for the body */
-body {
-background-color: #131316;
-color: #ffffff;
-font-family: "Poppins", sans-serif;
-padding: 0;
-margin: 0;
+body,
+h3 {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  
+
 }
-th, td {
+
+th,
+td {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
+
 th {
   background-color: #009c77;
   color: white;
-} 
+}
 
-.form1 {
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+/* .form1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,12 +53,52 @@ th {
   align-items: center;
   justify-content: center;
   height: 70vh
-}
+} */
 
 .button_sports {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submitBTN {
+
+  background-color: #131316 !important;
+  color: white !important;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px !important;
+  transition: all 0.3s ease-in-out !important;
+  margin-top: 20px !important;
+
+}
+
+.submitBTN:Hover {
+
+  background-color: cyan !important;
+  filter: brightness(90%) !important;
+  margin-top: 20px !important;
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  width: 45%;
+  padding: 10px;
+}
+
+.form1 h3,
+.form2 h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}

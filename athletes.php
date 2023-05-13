@@ -84,15 +84,14 @@ include_once 'dbh_inc.php'
         </div>
 
         <div class="column">
-            <form action="delete.inc.athl.php" method="POST" class="form2">
-                <!-- Fields for form 2 -->
-                <h3>Eliminar atleta</h3>
+            <!-- Fields for form 2 -->
+            <h3>Eliminar atleta</h3>
 
-                <form action="delete.inc.athl.php" method="POST" class="form2">
-                    <input type="number" name="atletaID" placeholder="AtletaID">
-                    <br>
-                    <button type="submit" name="delete" class="submitBTN">Delete</button>
-                </form>
+            <form action="delete.inc.athl.php" method="POST" class="form2">
+                <input type="number" name="atletaID" placeholder="AtletaID">
+                <br>
+                <button type="submit" name="delete" class="submitBTN">Delete</button>
+            </form>
         </div>
     </div>
 

@@ -113,21 +113,36 @@ include_once 'dbh_inc.php'
 
 
   ?>
+    <div class="form-container">
 
-    <form action="submit.inc.php" method="POST" class="form1">
-        <input type="number" name="disciplinaID" placeholder="DisciplinaID">
-        <br>
-        <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
-        <br>
-        <button type="submit" name="submit">Submit</button>
-    </form>
+        <div class="column">
+            <h3>Añade un nuevo deporte</h3>
 
-    <form action="delete.inc.php" method="POST" class="form2">
-        <input type="number" name="disciplinaID" placeholder="DisciplinaID">
-        <br>
-        <button type="submit" name="delete">Delete</button>
-    </form>
+            <form action="submit.inc.php" method="POST" class="form1">
+                <label for="disciplinaID">DisciplinaID:</label><br>
+                <input type="number" name="disciplinaID" placeholder="DisciplinaID">
+                <br>
+                <label for="nombreDisciplina">Disciplina:</label><br>
+                <input type="text" name="nombreDisciplina" placeholder="NombreDisciplina">
+                <br>
+                <button type="submit" name="submit" class="submitBTN">Submit</button>
+            </form>
+        </div>
 
+        <div class="column">
+            <!-- Fields for form 2 -->
+            <h3>Eliminar disciplina</h3>
+            <form action="delete.inc.php" method="POST" class="form2">
+                <!-- Fields for form 2 -->
+                <!-- <h3>Eliminar disciplina</h3> -->
+                <label for="disciplinaID">DisciplinaID:</label><br>
+
+                <input type="number" name="disciplinaID" placeholder="DisciplinaID">
+                <br>
+                <button type="submit" name="delete" class="submitBTN">Delete</button>
+            </form>
+        </div>
+    </div>
 
     <!-- <form action="submit.inc.php" method="POST" class="form2">
         <input type="number" name="disciplinaID" placeholder="DisciplinaID">

@@ -1,4 +1,4 @@
-# database_project
+# DeportistasPR
 Database Project for our Computer Science Class.
 The Group Members consist of **Amarilys, Harry and Darell**
 
@@ -6,32 +6,34 @@ Time spent: **30+** hours spent in total
 
 ## Summary
 
-If I had to describe this project in three (4) emojis, they would be: **🏅 🇵🇷 💾 📟 **
+If I had to describe this project in four (4) emojis, they would be: **🏅 🇵🇷 💾 📟 **
 
 ## Application Features
 
 
 The following REQUIRED features are completed:
 
-- [ ] Contain at least 8 entity sets and 6 relationships. Some entity must contain inheritance.
-- [ ] Describe functional dependencies and constraints
-- [ ] Tables normalized to 3NF and if it does not lose FDs, take it to BCNF.
+- [x] Contain at least 8 entity sets and 6 relationships. Some entity must contain inheritance.
+- [x] Describe functional dependencies and constraints
+- [x] Tables normalized to 3NF and if it does not lose FDs, take it to BCNF.
 - [x] A simple page should be created to view, insert and modify data.
-- [ ] Design (Entity/Relation)
-- [ ] Implementation DB(.sql)
-- [ ] At least 3 queries
+- [x] Design (Entity/Relation)
+- [x] Implementation DB(.sql)
+- [x] At least 3 queries
 
 The following STRETCH features are implemented:
 
-- [ ] Re-brand the app by modifying the UI
+- [x] Re-brand the app by modifying the UI
+- [x] Logo
 
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgf' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://imgur.com/3hfh5cA.gif' title='Video Demo' width='' alt='Video Demo' />
 
-GIF created with **your chosen GIF tool**
+
+GIF created with **ScreenToGif**
 
 ## Notes
 

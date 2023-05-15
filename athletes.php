@@ -1,7 +1,9 @@
+<!-- Establish conexion  -->
 <?php
 include_once 'dbh_inc.php'
 
 ?>
+<!-- Render navbar to facilitate navigation -->
 <?php include 'navbar.php'; ?>
 
 
@@ -23,32 +25,32 @@ include_once 'dbh_inc.php'
 <body>
 
 
-    <div class="table-container">
-        <!-- Código de la tabla -->
-        <?php
-    $sql = "SELECT * FROM Atletas;";
-    $result = mysqli_query($conn, $sql);
 
-    echo "<table>";
-    echo "<tr><th>ID_Atleta</th><th>Nombre</th><th>Genero</th><th>Deporte</th><th>FechaNac</th><th>Altura</th><th>Peso</th><th>Estado</th></tr>";
+    <!-- Código de la tabla -->
+    <?php
+  $sql = "SELECT * FROM Atletas;";
+  $result = mysqli_query($conn, $sql);
 
-    while ($row = mysqli_fetch_assoc($result)) {
-      echo "<tr>";
-      echo "<td>" . $row['ID_Atleta'] . "</td>";
-      echo "<td>" . $row['Nombre'] . "</td>";
-      echo "<td>" . $row['Genero'] . "</td>";
-      echo "<td>" . $row['Deporte'] . "</td>";
-      echo "<td>" . $row['FechaNac'] . "</td>";
-      echo "<td>" . $row['Altura'] . "</td>";
-      echo "<td>" . $row['Peso'] . "</td>";
-      echo "<td>" . $row['Estado'] . "</td>";
-      echo "</tr>";
-    }
+  echo "<table>";
+  echo "<tr><th>ID_Atleta</th><th>Nombre</th><th>Genero</th><th>Deporte</th><th>FechaNac</th><th>Altura</th><th>Peso</th><th>Estado</th></tr>";
 
-    echo "</table>";
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['ID_Atleta'] . "</td>";
+    echo "<td>" . $row['Nombre'] . "</td>";
+    echo "<td>" . $row['Genero'] . "</td>";
+    echo "<td>" . $row['Deporte'] . "</td>";
+    echo "<td>" . $row['FechaNac'] . "</td>";
+    echo "<td>" . $row['Altura'] . "</td>";
+    echo "<td>" . $row['Peso'] . "</td>";
+    echo "<td>" . $row['Estado'] . "</td>";
+    echo "</tr>";
+  }
 
-    ?>
-    </div>
+  echo "</table>";
+
+  ?>
+
     <div class="form-container">
         <!-- User inputs -->
         <h3>Añade un nuevo atleta</h3>
@@ -57,7 +59,7 @@ include_once 'dbh_inc.php'
             <form action="submit.inc.athl.php" method="POST" class="form1">
                 <!-- Fields for form 1 -->
                 <label for="altura">Altura:</label><br>
-                <input type="number" name="altura" placeholder="Altura" id="altura" required><br>
+                <input type="number" name="altura" placeholder="Altura" id="altura" step="any" required><br>
 
                 <label for="deporte">Deporte:</label><br>
                 <input type="text" name="deporte" placeholder="Deporte" id="deporte" required><br>
@@ -87,37 +89,13 @@ include_once 'dbh_inc.php'
             <!-- Fields for form 2 -->
             <h3>Eliminar atleta</h3>
 
-      <form action="delete.inc.athl.php" method="POST" class="form2">
-        <input type="number" name="atletaID" placeholder="AtletaID">
-        <br>
-        <button type="submit" name="delete" class="submitBTN">Delete</button>
-      </form>
-
-    <?php
-  // if (isset($_POST['submit'])) {
-  //   $atleta_id = $_POST['atletaid'];
-  //   $nombre = $_POST['nombre'];
-  //   $genero = $_POST['genero'];
-  //   $deporte = $_POST['deporte'];
-  //   $fecha_nac = $_POST['fechanac'];
-  //   $altura = $_POST['altura'];
-  //   $peso = $_POST['peso'];
-  //   $activo = $_POST['activo'];
-
-  //   // Use a prepared statement to insert the values into the database
-  //   $stmt = mysqli_prepare($conn, "INSERT INTO Atletas (ID_Atleta, Nombre, Genero, Deporte, FechaNac, Altura, Peso, Activo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-  //   mysqli_stmt_bind_param($stmt, "issssiis", $atleta_id, $nombre, $genero, $deporte, $fecha_nac, $altura, $peso, $activo);
-  //   mysqli_stmt_execute($stmt);
-
-  //   // Redirect the user back to the form page
-  //   header("Location: athletes.php?submit=success");
-  //   exit();
-  // }
-  ?>
-
-
-
-    <!-- <button class="button_athletes" onclick="location.href='index.html'">Go to home page</button> -->
+            <form action="delete.inc.athl.php" method="POST" class="form2">
+                <input type="number" name="atletaID" placeholder="AtletaID">
+                <br>
+                <button type="submit" name="delete" class="submitBTN">Delete</button>
+            </form>
+        </div>
+    </div>
 
 
 

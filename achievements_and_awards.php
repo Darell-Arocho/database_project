@@ -20,6 +20,7 @@ include_once 'dbh_inc.php'
 
 <body>
 
+    <!-- Table of Achivements and awards -->
 
     <?php
   $sql = "SELECT * FROM Logros_y_Reconocimientos;";
@@ -41,23 +42,23 @@ include_once 'dbh_inc.php'
 
 
   ?>
-
+    <!-- Queries for modifying an achivement -->
     <div class="form-container">
         <!-- User inputs -->
         <h3>Modifica</h3>
 
-      <form action="modify.inc.logros.php" method="POST" class="form1">
-        <input type="number" name="logroID" placeholder="LogroID">
-        <br>
-        <input type="text" name="nombreLogro" placeholder="NombreLogro">
-        <br>
-        <input type="text" name="fecha" placeholder="Fecha">
-        <br>
-        <input type="number" name="atletaID" placeholder="AtletaID">
-        <br>
-        <button type="submit" name="modify" class="submitBTN">Modify</button>
-      </form>
-
+        <form action="modify.inc.logros.php" method="POST" class="form1">
+            <input type="number" name="logroID" placeholder="LogroID">
+            <br>
+            <input type="text" name="nombreLogro" placeholder="NombreLogro">
+            <br>
+            <input type="text" name="fecha" placeholder="Fecha">
+            <br>
+            <input type="number" name="atletaID" placeholder="AtletaID">
+            <br>
+            <button type="submit" name="modify" class="submitBTN">Modify</button>
+        </form>
+    </div>
     <!-- <form action="submit.inc.logros.php" method="POST" class="form2">
         <input type="number" name="logroID" placeholder="LogroID">
         <br>
